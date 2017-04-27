@@ -1,0 +1,47 @@
+/* General styling */
+html {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0px auto;
+}
+
+.div {
+  display: block;
+}
+
+/* Top section styling */
+.top-section {
+  background: url("../images/glasses-bg.png");
+  background-position: center;
+  background-size: cover;
+  height: 31rem;
+}
+
+header {
+  display: inline-flex;
+  align-items: center;
+  background-color: cadetblue;
+  width: 100%;
+}
+
+.logo-text {
+  display: inline-flex;
+  align-items: center;
+}
+
+.menu {
+
+}
+
+/* Content section styling */
+
+
+/* Footer section styling */
