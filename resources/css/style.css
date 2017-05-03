@@ -6,11 +6,12 @@ html {
 
 body {
   margin: 0;
+  font-family: Helvetica;
 }
 
 .container {
   max-width: 960px;
-  margin: 0px auto;
+  margin: auto;
 }
 
 .div {
@@ -19,17 +20,26 @@ body {
 
 /* Top section styling */
 .top-section {
-  background: url("../images/glasses-bg.png");
-  background-position: center;
-  background-size: cover;
-  height: 31rem;
+
 }
 
 header {
-  display: inline-flex;
+  background: url("../images/glasses-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30rem;
+  padding-top: 1rem;
+}
+
+header .topBar {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   background-color: cadetblue;
-  width: 100%;
+  padding: 1rem 2rem;
+  color: white;
+  font-size: 1rem;
 }
 
 .logo-text {
@@ -37,8 +47,35 @@ header {
   align-items: center;
 }
 
-.menu {
+.logo img {
+  height: 1.5rem;
+  width: auto;
+  padding-right: 1rem;
+}
 
+nav span {
+  margin-left: 2rem;
+}
+
+header .tag-box {
+  justify-content: flex-end;
+}
+
+.tag-box {
+  display: flex;
+}
+
+.tag-line {
+  line-height: 2.4;
+  background-color: white;
+  padding: 1.5rem 5rem;
+  margin-top: 10rem;
+  margin-right: -2rem;
+}
+
+.tag-line h1 {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 /* Content section styling */
