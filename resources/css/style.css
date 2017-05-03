@@ -18,16 +18,18 @@ body {
   display: block;
 }
 
-/* Top section styling */
-.top-section {
-
+.logo img {
+  height: 1.5rem;
+  width: auto;
+  padding-right: 1rem;
 }
 
+/* Top section styling */
 header {
   background: url("../images/glasses-bg.png");
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
   height: 30rem;
   padding-top: 1rem;
 }
@@ -45,12 +47,6 @@ header .topBar {
 .logo-text {
   display: inline-flex;
   align-items: center;
-}
-
-.logo img {
-  height: 1.5rem;
-  width: auto;
-  padding-right: 1rem;
 }
 
 nav span {
@@ -79,6 +75,174 @@ header .tag-box {
 }
 
 /* Content section styling */
+.images {
+  display: flex;
+  justify-content: center;
+}
 
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem;
+  height: 8rem;
+  text-align: center;
+  width: 5rem;
+}
+
+.image-container img {
+  width: 3.5rem;
+  height: auto;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+}
+
+.text-container {
+  width: 35%;
+  margin-right: 5%;
+  margin-bottom: 5rem;
+}
+
+.text h4 {
+  width: 10rem;
+  background-color: cadetblue;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  padding-left: 1.25rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.text p {
+  margin-top: 1rem;
+}
 
 /* Footer section styling */
+.footer {
+  background-color: azure;
+}
+
+footer {
+  padding: 4rem 0px 4rem 4rem;
+}
+
+.footer-content {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Styling for different screen sizes */
+@media only screen and (min-width: 481px) {
+  .mobile-menu  {
+    display: none;
+  }
+}
+
+/* Styling for Tablet screen size */
+@media only screen and (max-width: 1024px) {
+  .container {
+    max-width: 100%;
+  }
+
+  header {
+    padding-top: 0px;
+    height: 22rem;
+  }
+
+  .tag-line {
+    padding: .75rem 4rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+
+  .tag-line h1 {
+    font-size: 1.33rem;
+  }
+
+}
+
+/* Styling for mobile screen size */
+@media only screen and (max-width: 480px) {
+  header {
+    background-position: 20%;
+    height: 17rem;
+  }
+
+  .logo-text span {
+    display: none;
+  }
+
+  .menu span {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+
+  .tag-line {
+    padding: 1rem;
+    margin-top: 9rem;
+  }
+
+  .tag-line h1 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .images {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3.77rem;
+    padding-bottom: 3.77rem;
+  }
+
+  .image-container {
+    margin: 1.54rem 4rem;
+    font-size: 0.77rem;
+    height: auto;
+  }
+
+  .image-container p {
+    margin-top: 1rem;
+  }
+
+  .text {
+    flex-wrap: wrap;
+  }
+
+  .text-container {
+    width: 100%;
+    height: auto;
+    font-size: 0.77rem;
+    margin: 0px;
+  }
+
+  .text-container h4 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .text-container p {
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+  }
+
+  .footer span {
+    display: none;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
